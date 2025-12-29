@@ -33,11 +33,11 @@ else
  dnf list installed phython3
 if [ $? -ne 0 ]
 then 
-    echo "phython3 is not installed... going to install it"
-    dnf install phython3
+    echo "python3 is not installed... going to install it"
+    dnf install python3
     VALIDATE $? "python3"
 else
-    echo "phython3 is already installed...Nothimg to do"
+    echo "python3 is already installed...Nothimg to do"
  fi
 
  dnf list installed nginx
